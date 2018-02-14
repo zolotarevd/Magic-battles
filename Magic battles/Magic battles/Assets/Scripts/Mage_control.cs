@@ -29,6 +29,8 @@ public class Mage_control : Unit
 	private float timer = 0;
 	private float Shtimer = 0;
 
+	private float Cast = Mathf.PI/180;
+
 	new private Rigidbody2D rigidbody;
 	private Animator animator;
 
@@ -95,11 +97,11 @@ public class Mage_control : Unit
 	private void CmdCast()
 	{
 		Shtimer = 0;
-		Vector3 position = stuff.transform.position; position.y += 0.5F; position.x += 0.5F * (FlipX ? 1.0F : -1.0F);
+		Vector3 position = stuff.transform.position;// position.y += 0.5F; position.x += 0.5F * (FlipX ? 1.0F : -1.0F);
 		var newbullet = (GameObject)Instantiate (bullet, position, bullettransform.rotation);
-		Vector2 tmpspeed = bulletspeed;
-		tmpspeed.x *= (FlipX ? -1 : 1);
-		Vector2 addspeed;
+		Vector2 tmpspeed = new Vector2(-bulletspeed*Mathf.Sin(stuff.transform.rotation.eulerAngles.z*Cast), bulletspeed*Mathf.Cos(stuff.transform.rotation.eulerAngles.z*Cast));
+		Debug.Log(stuff.transform.rotation.eulerAngles.z);
+		Vector2 addspeed = new Vector2(0, 0);
 		addspeed.x = Random.value;
 		addspeed.y = Random.value;
 		newbullet.GetComponent<Rigidbody2D> ().velocity = tmpspeed + addspeed;
@@ -135,10 +137,10 @@ public class Mage_control : Unit
 		patern.flipX = FlipX;
 
 		if (FlipX && stuff.transform.rotation.z > -Sotation.z)
-			stuff.transform.Rotate (Vector3.forward, -10 * (Sotation.z + stuff.transform.rotation.z));
+			stuff.transform.Rotate (Vector3.forward, 100*Time.deltaTime*(-10 *(Sotation.z + stuff.transform.rotation.z)));
 		
 		if (!FlipX && stuff.transform.rotation.z < Sotation.z)
-			stuff.transform.Rotate (Vector3.forward, 10 * (Sotation.z - stuff.transform.rotation.z));
+			stuff.transform.Rotate(Vector3.forward, 100*Time.deltaTime*(10*(Sotation.z - stuff.transform.rotation.z)));
 		
 		if(isGrounded)
 			state = MageState.Idle;

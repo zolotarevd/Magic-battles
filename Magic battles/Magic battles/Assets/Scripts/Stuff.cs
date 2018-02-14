@@ -28,10 +28,6 @@ public class Stuff : NetworkBehaviour
 		SpriteRenderer[] SRs = GetComponentsInChildren<SpriteRenderer> ();
 		stuffsprite = SRs[1];
 		arcanasprite = SRs[0];
-
-		bullet = MC.bullet;
-		bullettransform = MC.transform;
-		bulletspeed = MC.bulletspeed;
 	}
 
 	// Use this for initialization

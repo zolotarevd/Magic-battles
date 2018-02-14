@@ -8,7 +8,6 @@ public class Bullet : MonoBehaviour
 
 	private float speed = 30F;
 	private SpriteRenderer sprite;
-	private Vector3 direction;
 
 
 	new private Rigidbody2D rigidbody;
@@ -29,6 +28,5 @@ public class Bullet : MonoBehaviour
 
 	void Update ()
 	{
-		transform.position = Vector3.MoveTowards (transform.position, transform.position + direction, speed * Time.deltaTime);
 	}
 }

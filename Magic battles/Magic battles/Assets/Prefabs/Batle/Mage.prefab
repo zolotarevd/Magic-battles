@@ -336,14 +336,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f955ce849e93a4cbc3f31de596f4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 1000000
   speed: 15
   Mspeed: 29
   Jforce: 120
   Jdelay: 0.1
-  Shdelay: 0.03
+  Shdelay: 0
   bullet: {fileID: 1236034850615692, guid: 8589de9be467e6248957a25b50673417, type: 2}
   bullettransform: {fileID: 4839860525746898}
-  bulletspeed: {x: -20, y: 2.5}
+  bulletspeed: 10
   FlipX: 0
   stuff: {fileID: 1616335329536288}
   a: {fileID: 1387663387182304}

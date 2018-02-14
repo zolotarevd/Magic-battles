@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4422944710793498}
   - component: {fileID: 212356615589122550}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: totem_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114327678117939482}
   - component: {fileID: 114147672262436672}
   - component: {fileID: 114002941309277416}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
