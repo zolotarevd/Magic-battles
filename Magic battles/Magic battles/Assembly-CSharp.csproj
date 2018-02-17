@@ -53,7 +53,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ArcanaManager.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Button_Manager.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Exit_on_click.cs" />
      <Compile Include="Assets\Scripts\Mage_control.cs" />
      <Compile Include="Assets\Scripts\Stuff.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
