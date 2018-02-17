@@ -105,7 +105,7 @@ public class Mage_control : Unit
 		addspeed.x = Random.value;
 		addspeed.y = Random.value;
 		newbullet.GetComponent<Rigidbody2D> ().velocity = tmpspeed + addspeed;
-		newbullet.GetComponentInChildren<SpriteRenderer> ().color = Random.ColorHSV (0, 1, 0, 1, 1, 1, 1, 1);
+		newbullet.GetComponentInChildren<SpriteRenderer> ().color = Color.magenta;
 		newbullet.GetComponent<Rigidbody2D> ().position += tmpspeed / (bulletspeed * 2);
 		NetworkServer.Spawn(newbullet);
 

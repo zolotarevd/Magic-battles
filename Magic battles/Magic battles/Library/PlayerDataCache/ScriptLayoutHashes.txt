@@ -134,6 +134,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 0310658f5c4215c8ce25de2952685a1e Assembly-CSharp.dll:.TriggerFloor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Stuff
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Button_Manager
 d879cc048e842d54b8b1f3ba0640a9ed Assembly-CSharp.dll:.Mage_control
 4a75fd1506669fb43bc2ab7dd7b9fbc7 Assembly-CSharp.dll:.Unit
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Exit_on_click
