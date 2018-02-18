@@ -100,14 +100,14 @@ public class Mage_control : Unit
 		Vector3 position = stuff.transform.position;// position.y += 0.5F; position.x += 0.5F * (FlipX ? 1.0F : -1.0F);
 		var newbullet = (GameObject)Instantiate (bullet, position, bullettransform.rotation);
 		Vector2 tmpspeed = new Vector2(-bulletspeed*Mathf.Sin(stuff.transform.rotation.eulerAngles.z*Cast), bulletspeed*Mathf.Cos(stuff.transform.rotation.eulerAngles.z*Cast));
-		Debug.Log(stuff.transform.rotation.eulerAngles.z);
+		//Debug.Log(stuff.transform.rotation.eulerAngles.z);
 		Vector2 addspeed = new Vector2(0, 0);
 		addspeed.x = Random.value;
 		addspeed.y = Random.value;
 		newbullet.GetComponent<Rigidbody2D> ().velocity = tmpspeed + addspeed;
-		newbullet.GetComponentInChildren<SpriteRenderer> ().color = Color.magenta;
 		newbullet.GetComponent<Rigidbody2D> ().position += tmpspeed / (bulletspeed * 2);
 		NetworkServer.Spawn(newbullet);
+		//newbullet.GetComponentInChildren<SpriteRenderer> ().color = Random.ColorHSV(0, 1, 0, 1, 1, 1, 1, 1);
 
 		//arcanasprite.color = Random.ColorHSV(0, 1, 0, 1, 1, 1, 1, 1);
 	}
@@ -131,7 +131,7 @@ public class Mage_control : Unit
 	private void Update()
 	{
 		Quaternion Sotation = Quaternion.Euler (0, 0, 90);
-		Debug.Log(Sotation.z);
+		//Debug.Log(Sotation.z);
 		CheckGround ();
 
 		sprite.flipX = FlipX;
@@ -159,7 +159,7 @@ public class Mage_control : Unit
 			if (Input.GetButton ("Cast") && Shtimer >= Shdelay)
 			{
 				CmdCast ();
-				Debug.Log("cast");
+				//Debug.Log("cast");
 			}
 			if (Input.GetButton ("Jump") && isGrounded && timer >= Jdelay && rigidbody.velocity.magnitude <= Mspeed)
 				Jump ();
