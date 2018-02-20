@@ -31,5 +31,5 @@ Magic-battles
 ### Используемые материалы:
 - Набор текстур для разработки игр “Sunny Land”: https://ansimuz.itch.io/sunny-land-pixel-game-art
 - Набор шрифтов “More Fonts”: https://somepx.itch.io/more-fonts
-// Набор шрифтов “From Patreon V3”: https://somepx.itch.io/from-patreon-vol-3
-// Набор шрифтов “Random Fonts”: https://tokkatrain.itch.io/random-fonts
+- Набор шрифтов “From Patreon V3”: https://somepx.itch.io/from-patreon-vol-3
+- Набор шрифтов “Random Fonts”: https://tokkatrain.itch.io/random-fonts
